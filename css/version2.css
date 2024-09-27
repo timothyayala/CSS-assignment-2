@@ -38,26 +38,28 @@ img {
     background-color: #FFBD82;
 }
 section {
-    max-width: 800px;
-    margin: 0 auto;
+    flex-basis: 50%;
+    padding: 15px;
 }
 .text {
-    background-color: #fff;
-    padding: 20px;
+    background-color: transparent;
     font-size: 16px;
     line-height: 1.6;
 }
 .text h2 {
-    text-align: center;
+    text-align: left;
+    font-size: 24px;
 }
 article {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-direction: row;
+    align-items: flex-start;
+    margin: 20px 0;
+    padding: 20px;
 }
-header, footer {
+header {
     display: flex;
-    align-items: center;
+    align-items: space-between;
     background-color: #836b6b;
     padding: 10px 20px;
 }
@@ -72,9 +74,14 @@ nav a {
 nav a:hover {
     background-color: #666;
 }
-section, article {
-    margin: 20px 0;
-    padding: 20px
+footer {
+    display: flex;
+    background-color: #836b6b;
+    padding: 10px 20px;
+}
+footer p {
+    margin: 0;
+    color: #fff;
 }
 /* --- link pseudo classes --- */
 /* --- you may ADD other link pseudo classes for
